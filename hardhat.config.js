@@ -45,7 +45,7 @@ module.exports = {
             default: 0,
         },
         users: {
-            default: 0,
+            default: 1,
         },
     },
 }
