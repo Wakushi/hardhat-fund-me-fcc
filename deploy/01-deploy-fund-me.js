@@ -9,7 +9,7 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
 
     let ethUsdPriceFeedAddress
     if (developmentChains.includes(network.name)) {
-        // deployments.get('ContractName') will return the latest contract deployed at that name.
+        // deployments.get('ContractName') will return the metadata of the latest contract deployed at that name.
         const ethUsdAggregator = await deployments.get("MockV3Aggregator")
         ethUsdPriceFeedAddress = ethUsdAggregator.address
     } else {
